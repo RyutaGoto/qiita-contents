@@ -35,6 +35,25 @@ ignorePublish: false
 
 まずは公式に書いてある通りにセットアップ
 
+```console
+npx create-strapi-app@latest my-project
+npm run develop
+```
+
+そうすると`http://localhost:1337/admin`が新規タブで自動で開きます。（開かなかったら自分でアクセスしてくだせえ）
+メールアドレスとパスワードを入力して自分のアカウントを作成すると次のような画面が開きます。
+![スクリーンショット 2024-01-27 23.47.46.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/2883302/ccf9313f-693c-bbb4-b63c-b39fb0324628.png)
+
+そのあとは「Content-Type Builder」ってとこからスキーマを定義して、そのスキーマに基づく実際のデータを「Content Manager」からどんどん追加していってください。
+
+なんか例えばの話でカテゴリという名前のスキーマを作ったんで画像だけでも置いておきますね。
+
+![スクリーンショット 2024-01-27 23.54.31.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/2883302/dd80d318-c494-f362-4538-c57882d47dbd.png)
+「Content-Type Builder」と
+
+![スクリーンショット 2024-01-27 23.54.36.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/2883302/8b906237-6e8c-99b9-c847-cd006526bc48.png)
+「Content Manager」
+
 ### Astro.js からデータを取得する
 
 まずは公式に書いてある通りにセットアップと実際に開発サーバーを立ち上げてみるところからですね
